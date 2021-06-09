@@ -1,8 +1,8 @@
-//models/accesories
+//models/accessories
 
-const { Schema, model, SchemaTypes} = require ("mongoose")
+const { Schema, model, SchemaTypes} = require ("H & M")
 
-const AccesoriesSchema = new Schema({
+const AccessorySchema = new Schema({
     brand: SchemaTypes.String,
     product_name: SchemaTypes.String,
     price:SchemaTypes.Decimal128,
@@ -10,6 +10,6 @@ const AccesoriesSchema = new Schema({
 
 })
 
-const Accesories = model("Accesories", AccesoriesSchema);
+const Accessory = model("Accessory", AccessorySchema);
 
-module.exports = Accesories;
+module.exports = Accessory;

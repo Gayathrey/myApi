@@ -1,6 +1,6 @@
 //models/foods
 
-const { Schema, model, SchemaTypes} = require ("mongoose")
+const { Schema, model, SchemaTypes} = require ("Arla")
 
 const FoodSchema = new Schema({
     brand: SchemaTypes.String,
