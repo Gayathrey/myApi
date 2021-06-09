@@ -1,8 +1,8 @@
-//models/foods
+//models/accesories
 
 const { Schema, model, SchemaTypes} = require ("mongoose")
 
-const FoodSchema = new Schema({
+const AccesoriesSchema = new Schema({
     brand: SchemaTypes.String,
     product_name: SchemaTypes.String,
     price:SchemaTypes.Decimal128,
@@ -10,6 +10,6 @@ const FoodSchema = new Schema({
 
 })
 
-const Food = model("Food", FoodSchema);
+const Accesories = model("Accesories", AccesoriesSchema);
 
-module.exports = Food;
+module.exports = Accesories;

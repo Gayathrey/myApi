@@ -26,7 +26,6 @@ const auth =  require("../auth-middleware")
 //     }
 // })
 
-
 // reponse:
 // {
 //     count: 12
@@ -70,43 +69,6 @@ router.get("/animals",  async function(request, response, next) {
         return next(error)        
     }
 })
-
-//localhost:4000/api/v1/animals?offset=5&limit=5
-// router.get("/animals", async function(request, response, next) {
-
-//     let limit = parseInt(request.query.limit) || 5;
-//     let offset = parseInt(request.query.offset) || 0;
-//     try {
-//         //ny kode her
-//         let count = (await Animal.find()).length
-//         let result = await Animal.find().limit(limit).skip(offset)
-
-//         let queryStringNext = `?offset=$(offset+limit)&limit=$(limit)`
-//         let queryStringPrevious;
-
-//         if(offset >= limit) {
-//             queryStringPrevious = `?offset=$(offset - limit)&limit=$(limit)`
-//         }
-
-//         let apiUrl = `${request.protocol}://${request.hostname}${request.hostname==="localhost" ? ":" + process.env.PORT : ''}`
-//         let apiPath = `${request.baseUrl}${request.path}`
-//         console.log(apiUrl)  
-        
-//         let output = {
-//             count,
-//             next: (offset + limit < count) ? apiUrl + apiPath + queryStringNext : null,
-//             previous: offset > 0 ? apiUrl + apiPath + queryStringPrevious : null,
-//             result,
-//             url: apiUrl + request.originalUrl
-//         }
-
-//         response.json(output)
-
-//     } catch (error) {
-//         return next(error)
-//     }
-// })
-
 
 
 // get single animal by ID
