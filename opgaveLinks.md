@@ -5,4 +5,4 @@
     https://gaya-myapi.herokuapp.com/
 
 3.  Link til det github repository der indeholder det website
-    
+    https://github.com/Gayathrey/consumeApi.git
