@@ -3,8 +3,8 @@ const express = require("express")
 const formidable = require("express-formidable")
 const cors = require("cors")
 const animals = require("./routes/animals")
-const foods = require("./routes/foods")
-const accessories = require("./routes/accessories")
+// const foods = require("./routes/foods")
+// const accessories = require("./routes/accessories")
 
 
 //set up express app
@@ -23,8 +23,8 @@ app.use(formidable())
 
 //set up app routes
 app.use("/api/v1", animals)
-app.use("/api/v1", foods)
-app.use("/api/v1", accessories)
+// app.use("/api/v1", foods)
+// app.use("/api/v1", accessories)
 
 
 // app.get("/", function(request,response,next){
